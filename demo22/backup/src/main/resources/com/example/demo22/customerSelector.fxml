@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.CustomerSelector">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@/razer-blade-15-Runway_1920x1080.jpg" />
+      </ImageView>
+
+      <Button layoutX="410.0" layoutY="209.0" mnemonicParsing="false" onAction="#switchToCustomerView" prefHeight="108.0" prefWidth="461.0" style="-fx-background-color: yellow;" text="Admin">
+         <font>
+            <Font name="Century Gothic" size="51.0" />
+         </font>
+      </Button>
+      <Button layoutX="410.0" layoutY="390.0" mnemonicParsing="false" onAction="#switchToUserView" prefHeight="108.0" prefWidth="461.0" style="-fx-background-color: green;" text="User">
+         <font>
+            <Font name="Century Gothic" size="52.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

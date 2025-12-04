@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.DeleteReviewController">
+   <children>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="96.0" prefHeight="47.0" prefWidth="115.0" text="Delete Review">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="25.0" layoutY="225.0" mnemonicParsing="false" onAction="#deleteReviewButton" prefHeight="47.0" prefWidth="115.0" text="Delete" />
+      <TableView fx:id="reviewsTable" layoutX="161.0" layoutY="50.0" prefHeight="295.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="reviewIdColumn" prefWidth="75.0" text="Review_ID" />
+          <TableColumn fx:id="customerNameColumn" prefWidth="101.0" text="Customer Name" />
+            <TableColumn fx:id="gameNameColumn" prefWidth="98.0" text="Game Name" />
+            <TableColumn fx:id="ratingColumn" prefWidth="75.0" text="Rating" />
+            <TableColumn fx:id="commentColumn" prefWidth="213.0" text="Comment" />
+        </columns>
+      </TableView>
+      <TextField fx:id="reviewIdField" layoutX="22.0" layoutY="171.0" prefHeight="26.0" prefWidth="121.0" promptText="Enter Review ID" />
+      <Label layoutX="25.0" layoutY="154.0" prefHeight="17.0" prefWidth="63.0" text="Review ID:" />
+      <Button fx:id="backButton" layoutX="25.0" layoutY="291.0" mnemonicParsing="false" onAction="#backButton" prefHeight="47.0" prefWidth="115.0" text="Back" />
+   </children>
+</AnchorPane>

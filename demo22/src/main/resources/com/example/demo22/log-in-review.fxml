@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.GameReviewController">
+   <children>
+      <TextField fx:id="emailField" layoutX="151.0" layoutY="233.0" prefHeight="45.0" prefWidth="239.0" promptText="Enter E-mail" />
+      <PasswordField fx:id="passwordField" layoutX="151.0" layoutY="338.0" prefHeight="45.0" prefWidth="239.0" promptText="Enter Password" />
+      <Label layoutX="151.0" layoutY="293.0" prefHeight="45.0" prefWidth="151.0" text="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="188.0" prefHeight="45.0" prefWidth="151.0" text="E-mail">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="89.0" prefHeight="76.0" prefWidth="285.0" text="Customer Log-in">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="151.0" layoutY="421.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="45.0" prefWidth="114.0" text="Log In" />
+      <Button layoutX="276.0" layoutY="421.0" mnemonicParsing="false" onAction="#backToGameReview" prefHeight="45.0" prefWidth="114.0" text="Back" />
+   </children>
+</AnchorPane>

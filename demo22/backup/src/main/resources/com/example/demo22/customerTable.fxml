@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.customerTable">
+   <children>
+      <Text layoutX="399.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Table" wrappingWidth="529.10546875">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Text>
+      <TableView fx:id="customerTable" layoutX="78.0" layoutY="157.0" prefHeight="540.0" prefWidth="1125.0" />
+      <Button layoutX="89.0" layoutY="34.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="216.0" text="Back" />
+      <TextField fx:id="searchBar" layoutX="265.0" layoutY="121.0" prefHeight="25.0" prefWidth="376.0" />
+      <Text layoutX="78.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter By" wrappingWidth="94.158203125" />
+      <RadioButton fx:id="lastNameRadio" layoutX="138.0" layoutY="125.0" mnemonicParsing="false" text="Last Name" />
+   </children>
+</AnchorPane>

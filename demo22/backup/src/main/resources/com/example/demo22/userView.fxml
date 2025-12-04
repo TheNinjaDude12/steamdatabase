@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.UserView">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../thumb-1920-693889.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="406.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToUserRegister" prefHeight="116.0" prefWidth="469.0" style="-fx-background-color: yellow;" text="Register">
+         <font>
+            <Font name="Century Gothic" size="51.0" />
+         </font>
+      </Button>
+      <Button layoutX="471.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchToUserLogIn" prefHeight="112.0" prefWidth="353.0" style="-fx-background-color: green;" text="Login" underline="true">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.GameAdd">
+   <children>
+      <Label layoutX="20.0" layoutY="22.0" text="Add Game Record">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="69.0" text="Title:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField1" layoutX="75.0" layoutY="69.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="34.0" layoutY="108.0" text="Genre:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="145.0" text="Release Date:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="183.0" text="Platform:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="220.0" text="Price:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="256.0" text="Status:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="290.0" text="Publisher ID:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField2" layoutX="87.0" layoutY="108.0" prefHeight="25.0" prefWidth="184.0" />
+      <DatePicker fx:id="datePicker" layoutX="135.0" layoutY="145.0" prefHeight="25.0" prefWidth="134.0" />
+      <ComboBox fx:id="comboBox1" layoutX="107.0" layoutY="183.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="textField3" layoutX="82.0" layoutY="220.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="textField4" layoutX="135.0" layoutY="290.0" prefHeight="25.0" prefWidth="134.0" />
+      <ComboBox fx:id="comboBox2" layoutX="92.0" layoutY="256.0" prefHeight="25.0" prefWidth="172.0" />
+      <Button layoutX="45.0" layoutY="340.0" mnemonicParsing="false" onAction="#addGameData" prefHeight="30.0" prefWidth="95.0" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="231.0" layoutY="340.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="95.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="titleError" layoutX="279.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titleError">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="statusError" layoutX="279.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="statusError">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="pubIDError" layoutX="279.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PubIDError">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
