@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="735.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.userRegister">
+   <children>
+      <Button layoutX="231.0" layoutY="383.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="49.0" prefWidth="233.0" style="-fx-background-color: #2ecc71;" text="Register" textOverrun="CLIP">
+         <font>
+            <Font name="Dubai Medium" size="26.0" />
+         </font></Button>
+      <Button layoutX="27.0" layoutY="391.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="174.0" text="Back" />
+      <TextField fx:id="emailField" layoutX="237.0" layoutY="22.0" prefHeight="43.0" prefWidth="198.0" />
+      <Text fill="#ffa007" layoutX="136.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="AirbnbCerealWBd" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#ffa007" layoutX="90.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="AirbnbCerealWBd" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#ffa007" layoutX="83.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="AirbnbCerealWBd" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#ffa007" layoutX="84.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="AirbnbCerealWBd" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lastNameField" layoutX="237.0" layoutY="186.0" prefHeight="43.0" prefWidth="198.0" />
+      <TextField fx:id="firstNameField" layoutX="237.0" layoutY="135.0" prefHeight="43.0" prefWidth="198.0" />
+      <Text fill="#ffa007" layoutX="90.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country">
+         <font>
+            <Font name="AirbnbCerealWBd" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="countryField" layoutX="237.0" layoutY="244.0" prefHeight="43.0" prefWidth="198.0" />
+      <Text fill="#ffa007" layoutX="26.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred Platform">
+         <font>
+            <Font name="AirbnbCerealWBd" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="platformField" layoutX="237.0" layoutY="306.0" prefHeight="43.0" prefWidth="198.0" />
+      <RadioButton fx:id="showPasswordRadio" layoutX="99.0" layoutY="117.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="5.0" prefWidth="149.0" text="Show Password" textFill="#bed705">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="emailError" fill="#00c8fa" layoutX="446.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot be empty" wrappingWidth="288.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordError" fill="#00c8fa" layoutX="446.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot be empty" wrappingWidth="280.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="firstNameError" fill="#00c8fa" layoutX="446.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name cannot be empty" wrappingWidth="262.58203125">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastNameError" fill="#00c8fa" layoutX="446.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name cannot be empty" wrappingWidth="307.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="countryError" fill="#00c8fa" layoutX="446.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country cannot be empty" wrappingWidth="288.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="498.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="237.0" layoutY="83.0" prefHeight="34.0" prefWidth="198.0">
+         <children>
+            <PasswordField fx:id="passwordField" prefHeight="34.0" prefWidth="199.0" />
+            <TextField fx:id="passwordTextField" prefHeight="34.0" prefWidth="199.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

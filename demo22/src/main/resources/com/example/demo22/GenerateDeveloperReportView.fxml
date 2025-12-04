@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.GenerateDeveloperReportController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="572.0" prefWidth="872.0" spacing="15.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Developer Report">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+               <children>
+                  <Label text="Filter by:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="yearRadio" mnemonicParsing="false" text="Year">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="filterGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="monthRadio" mnemonicParsing="false" text="Month &amp; Year" toggleGroup="$filterGroup" />
+                  <Label text="Year:">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Spinner fx:id="yearSpinner" prefWidth="100.0" />
+                  <Label text="Month:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Spinner fx:id="monthSpinner" prefWidth="80.0" />
+                  <Button mnemonicParsing="false" onAction="#generateReport" prefHeight="30.0" prefWidth="150.0" text="Generate Report">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="reportTable" prefHeight="450.0" prefWidth="872.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <Button layoutX="24.0" layoutY="551.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="85.0" text="Back" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="24.0" />
+   </children>
+</AnchorPane>

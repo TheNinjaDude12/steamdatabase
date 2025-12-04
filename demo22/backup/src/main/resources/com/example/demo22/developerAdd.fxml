@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.DeveloperAdd">
+   <children>
+      <TextField fx:id="countryField" layoutX="259.0" layoutY="163.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="nameField" layoutX="259.0" layoutY="121.0" prefHeight="25.0" prefWidth="258.0" />
+      <TextField fx:id="emailField" layoutX="259.0" layoutY="204.0" prefHeight="25.0" prefWidth="258.0" />
+      <Text layoutX="167.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dev Name" />
+      <Text layoutX="167.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+      <Text layoutX="167.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="167.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website" />
+      <TextField fx:id="websiteField" layoutX="259.0" layoutY="246.0" prefHeight="25.0" prefWidth="258.0" />
+      <Button layoutX="293.0" layoutY="307.0" mnemonicParsing="false" onAction="#addDeveloperData" prefHeight="30.0" prefWidth="150.0" text="Add Developer" />
+      <Text fx:id="nameError" fill="RED" layoutX="536.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="174.0" />
+      <Text fx:id="countryError" fill="RED" layoutX="536.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="174.0" />
+      <Text fx:id="emailError" fill="RED" layoutX="536.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="174.0" />
+      <Text layoutX="239.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Developer">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="33.0" layoutY="404.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="85.0" text="Back" />
+   </children>
+</AnchorPane>
